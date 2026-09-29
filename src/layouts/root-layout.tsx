@@ -13,7 +13,7 @@ export default function RootLayout() {
   return (
     <SidebarProvider>
       <AppSidebar />
-      <SidebarInset>
+      <SidebarInset className="flex flex-col flex-1 overflow-hidden">
         <header className="flex h-14 items-center justify-between gap-2 border-b px-4">
           <div className="flex items-center gap-2">
             <SidebarTrigger />
@@ -26,7 +26,7 @@ export default function RootLayout() {
           <Outlet />
         </main>
         <footer className="border-t p-4 text-center text-xs text-muted-foreground">
-          ชื่อ-นามสกุล และรหัสนักศึกษาของผู้จัดทำ — แก้เป็นของตัวเอง
+          จัดทำโดย นายธนกฤต เหล่าสืบสกุลไทย — 680610677
         </footer>
       </SidebarInset>
     </SidebarProvider>
